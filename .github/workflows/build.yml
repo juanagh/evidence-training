@@ -21,6 +21,7 @@ jobs:
         env:
           JF_URL: ${{ vars.ARTIFACTORY_URL }}
           JF_ACCESS_TOKEN: ${{ secrets.ARTIFACTORY_ACCESS_TOKEN }}
+          JFROG_CLI_LOG_LEVEL: DEBUG
 
       - name: Build Docker image
         run: |
